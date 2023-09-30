@@ -1,2 +1,0 @@
-# Estudos
- repositório de estudos
