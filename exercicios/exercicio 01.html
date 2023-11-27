@@ -12,9 +12,22 @@
             width: 400px;
             border-collapse: collapse;
         }
+
+        caption{
+            background-color: lightgray;
+            height: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+
+        }
         th{
             border: 2px solid black;
             padding: 8px;
+        }
+
+        tbody >tr:nth-child(even){
+            background-color: lightgray;
         }
         td{
             border: 2px solid black;
@@ -23,7 +36,7 @@
         .num{
             text-align: right;
         }
-        .head{
+        .head,tfoot{
             background-color: gray;
         }
     </style>
@@ -32,10 +45,11 @@
 
     <h1>minha Tabela</h1>
     <table>
+        <caption>populações das unidades federativas</caption>
         <thead>
             <tr>
-                <th class="head">Estados</th>
-                <th class="head">População</th>
+                <th scope="col" class="head">Estados</th>
+                <th scope="col" class="head">População</th>
             </tr>
         </thead>
 
@@ -153,7 +167,8 @@
         </tbody>
 
         <tfoot>
-            
+            <th scope="row">total de habitantes</th>
+            <td class="num">0000000000</td>
         </tfoot>
     </table>
 </body>
