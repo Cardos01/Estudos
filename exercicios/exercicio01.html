@@ -6,23 +6,28 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Teste de Formulário</h1>
 
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" autocomplete="on" method="get">
 
-        <p><label for="inome">Nome:</label> 
-        <input type="text" name="nome" id="inome" autocomplete="name" placeholder="digite seu nome completo" required maxlength="30"></p>
+        <fieldset>
+            <legend>gênero</legend>
+            <div><input type="radio" name="sexmas" id="isexmas">masculino</div>
+            <div><input type="radio" name="sexmas" id="isexfem">feminino</div>
+        </fieldset>
 
-        <p>média: <input type="number" step="0.1" min="0" max="10" placeholder="0 à 10" required></p>
-
-        <p>período letivo: <input type="month"></p>
-
-        <p>fodase: <input type="date"></p>
-
-        <p>
-            <input type="submit">
-            <input type="reset">
-        </p>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <div><input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">basquete</label></div>
+            <div><input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">futebol</label></div>
+            <div><input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">vôlei</label></div>
+            <div><input type="checkbox" name="esten" id="iesten"><label for="iesten">tênis</label></div>
+        </fieldset>
+        
+    <p>
+        <input type="submit">
+        <input type="reset">
+    </p>
     </form>
+    
 </body>
 </html>
