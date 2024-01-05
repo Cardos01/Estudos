@@ -1,2 +1,22 @@
 @charset "UTF-8";
 /*estilos para todas as telas*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body{
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 3px 3px black;
+    padding: 10px;
+}
