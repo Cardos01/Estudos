@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(/exercicios/mq003/teste01/pexels-ivan-dražić-15924771.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body{
+    width: 100vw;
+    height: 100vh;    
+}
+
+html{
+    background-color: #b9b7b7;
+}
