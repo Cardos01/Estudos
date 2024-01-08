@@ -6,17 +6,22 @@
     <title>Media Queries</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <ul>
-            <li>opção 1</li>
-            <li>opção 2</li>
-            <li>opção 3</li>
-            <li>opção 4</li>
-            <li>opção 5</li>
-        </ul>
+        <span id="lista" class="material-symbols-outlined" onclick="clickmenu()"> list</span>
+
+        <menu>
+            <ul id="itens">
+                <li><a href="#">opção 1</a></li>
+                <li><a href="#">opção 2</a></li>
+                <li><a href="#">opção 3</a></li>
+                <li><a href="#">opção 4</a></li>
+                <li><a href="#">opção 5</a></li>
+            </ul>
+        </menu>
     </header>
     <main>
         <div>
@@ -30,5 +35,10 @@
         </div>
     </main>
 
+    <script>
+        function clickMenu( ){
+            itens.style.display = 'block'
+        }
+    </script>
 </body>
 </html>
